@@ -197,7 +197,7 @@ body { font-family: 'Inter', sans-serif; }
             </div>
 
             <!-- Floating Card 3: Runners (Success Metrics) -->
-            <div class="absolute bottom-20 right-[-10px] sm:-right-6 bg-white p-4 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-44 z-20 border border-[rgba(0,0,0,0.04)] hidden sm:block">
+            <div class="absolute top-0 right-[-20px] sm:right-[-30px] bg-white p-4 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-44 z-20 border border-[rgba(0,0,0,0.04)] hidden sm:block">
                <div class="flex items-center gap-3 mb-3">
                     <div class="w-10 h-10 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trophy" class="lucide lucide-trophy w-5 h-5 stroke-[1.5]"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
@@ -271,7 +271,7 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
                 <h3 class="text-lg font-semibold text-primary mb-3">Keep more</h3>
                 <p class="text-sm text-secondary leading-relaxed">
-                    Every dollar goes directly to your mission. Zero platform fees ensure maximum impact.
+                    Every dollar goes directly to your mission.
                 </p>
                 <!-- Visual Progress Element -->
                 <div class="mt-auto pt-8">
@@ -1203,48 +1203,127 @@ body { font-family: 'Inter', sans-serif; }
     <script>
         lucide.createIcons();
         
-        // Accordion functionality
-        document.querySelectorAll('.accordion-item').forEach(item => {
+        // Accordion functionality with auto-scroll
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        const accordionContainer = document.getElementById('feature-accordion');
+        let autoScrollInterval = null;
+        let currentIndex = 0;
+        let userInteracted = false;
+        let resumeTimeout = null;
+        const AUTO_SCROLL_DELAY = 4000; // 4 seconds per item
+        const RESUME_DELAY = 8000; // Resume auto-scroll 8 seconds after user interaction
+        
+        // Function to activate a specific accordion item
+        function activateAccordionItem(index) {
+            const items = Array.from(accordionItems);
+            const targetItem = items[index];
+            
+            if (!targetItem) return;
+            
+            // Close all items
+            items.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.classList.remove('border-[#F4C84A]');
+                otherItem.classList.add('border-transparent', 'hover:border-[#E9B949]/30');
+                
+                const header = otherItem.querySelector('.accordion-header');
+                const content = otherItem.querySelector('.accordion-content');
+                
+                if (header) header.classList.remove('hidden');
+                if (content) content.classList.add('hidden');
+            });
+            
+            // Open target item
+            targetItem.classList.add('active');
+            targetItem.classList.add('border-[#F4C84A]');
+            targetItem.classList.remove('border-transparent', 'hover:border-[#E9B949]/30');
+            
+            const header = targetItem.querySelector('.accordion-header');
+            const content = targetItem.querySelector('.accordion-content');
+            
+            if (header) header.classList.add('hidden');
+            if (content) {
+                content.classList.remove('hidden');
+                // Trigger animation
+                content.style.opacity = '0';
+                content.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                    content.style.opacity = '1';
+                    content.style.transform = 'translateY(0)';
+                }, 10);
+            }
+            
+            // Re-initialize lucide icons for the newly visible content
+            lucide.createIcons();
+        }
+        
+        // Function to advance to next accordion item
+        function nextAccordionItem() {
+            currentIndex = (currentIndex + 1) % accordionItems.length;
+            activateAccordionItem(currentIndex);
+        }
+        
+        // Start auto-scrolling
+        function startAutoScroll() {
+            if (autoScrollInterval) return;
+            autoScrollInterval = setInterval(nextAccordionItem, AUTO_SCROLL_DELAY);
+        }
+        
+        // Stop auto-scrolling
+        function stopAutoScroll() {
+            if (autoScrollInterval) {
+                clearInterval(autoScrollInterval);
+                autoScrollInterval = null;
+            }
+        }
+        
+        // Schedule resume of auto-scroll after user interaction
+        function scheduleResumeAutoScroll() {
+            if (resumeTimeout) clearTimeout(resumeTimeout);
+            resumeTimeout = setTimeout(() => {
+                userInteracted = false;
+                if (isAccordionInView) {
+                    startAutoScroll();
+                }
+            }, RESUME_DELAY);
+        }
+        
+        // Track if accordion is in view
+        let isAccordionInView = false;
+        
+        // Intersection Observer to detect when section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isAccordionInView = entry.isIntersecting;
+                if (entry.isIntersecting && !userInteracted) {
+                    startAutoScroll();
+                } else {
+                    stopAutoScroll();
+                }
+            });
+        }, {
+            threshold: 0.3 // Trigger when 30% of the section is visible
+        });
+        
+        if (accordionContainer) {
+            observer.observe(accordionContainer);
+        }
+        
+        // Manual click handling
+        accordionItems.forEach((item, index) => {
             item.addEventListener('click', function() {
                 const isActive = this.classList.contains('active');
                 
-                // Close all items
-                document.querySelectorAll('.accordion-item').forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                    otherItem.classList.remove('border-[#F4C84A]');
-                    otherItem.classList.add('border-transparent', 'hover:border-[#E9B949]/30');
-                    
-                    const header = otherItem.querySelector('.accordion-header');
-                    const content = otherItem.querySelector('.accordion-content');
-                    
-                    if (header) header.classList.remove('hidden');
-                    if (content) content.classList.add('hidden');
-                });
+                // Stop auto-scroll on user interaction
+                userInteracted = true;
+                stopAutoScroll();
+                scheduleResumeAutoScroll();
                 
                 // If clicked item wasn't active, open it
                 if (!isActive) {
-                    this.classList.add('active');
-                    this.classList.add('border-[#F4C84A]');
-                    this.classList.remove('border-transparent', 'hover:border-[#E9B949]/30');
-                    
-                    const header = this.querySelector('.accordion-header');
-                    const content = this.querySelector('.accordion-content');
-                    
-                    if (header) header.classList.add('hidden');
-                    if (content) {
-                        content.classList.remove('hidden');
-                        // Trigger animation
-                        content.style.opacity = '0';
-                        content.style.transform = 'translateY(-10px)';
-                        setTimeout(() => {
-                            content.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-                            content.style.opacity = '1';
-                            content.style.transform = 'translateY(0)';
-                        }, 10);
-                    }
-                    
-                    // Re-initialize lucide icons for the newly visible content
-                    lucide.createIcons();
+                    currentIndex = index;
+                    activateAccordionItem(index);
                 }
             });
         });
