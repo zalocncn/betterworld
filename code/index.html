@@ -6,10 +6,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="https://betterworld.org/assets/brand/favicon/favicon-16x16.png">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <style>
 body { font-family: 'Inter', sans-serif; }
-/* Custom Utilities based on tokens */
 .bg-card { background-color: #F9F9F7; }
 .bg-panel { background-color: #EFEFEA; }
 .text-primary { color: #1A1A1A; }
@@ -18,38 +18,23 @@ body { font-family: 'Inter', sans-serif; }
 .border-subtle { border-color: rgba(0,0,0,0.06); }
 .shadow-soft { box-shadow: 0 6px 16px rgba(0,0,0,0.05); }
 .shadow-card { box-shadow: 0 10px 28px rgba(0,0,0,0.07); }
-
-/* Smooth fade for interactions */
-.card-hover {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card-hover:hover {
-    transform: translateY(-2px) scale(1.005);
-    box-shadow: 0 16px 48px rgba(0,0,0,0.08);
-}
-/* Smooth scrolling for carousel feel */
+.card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.card-hover:hover { transform: translateY(-2px) scale(1.005); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-/* Serif font for logos */
 .font-serif-logo { font-family: 'Playfair Display', serif; }
 </style>
-
-
-        
-        
-        
-        <style id="editor-visibility-style">
-          .invisible { visibility: hidden !important; }
-        </style><link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style><link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><link id="all-fonts-link-font-google-sans-flex" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-google-sans-flex">.font-google-sans-flex { font-family: 'Google Sans Flex', sans-serif !important; }</style><link id="all-fonts-link-font-oswald" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-oswald">.font-oswald { font-family: 'Oswald', sans-serif !important; }</style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">.font-dm-sans { font-family: 'DM Sans', sans-serif !important; }</style></head>
+</head>
 <body class="bg-[#F6F6F4] text-[#1A1A1A] antialiased selection:bg-[#F7DE8A] selection:text-[#1A1A1A] overflow-x-hidden">
 
     <!-- Navigation -->
     <nav class="lg:px-12 flex z-50 w-full pt-6 pr-6 pl-6 relative items-center justify-between">
         <div class="flex gap-x-2 items-center">
-    <div class="flex text-[#1A1A1A] w-10 h-10 rounded-full items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="heart-handshake" class="lucide lucide-heart-handshake w-8 h-8" style="color: rgb(26, 26, 26);"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762" class=""></path></svg>
-    </div><span class="text-xl font-semibold text-[#1A1A1A] tracking-tight">BetterWorld</span>
-</div>
+            <div class="flex text-[#1A1A1A] w-10 h-10 rounded-full items-center justify-center">
+                <i data-lucide="heart-handshake" class="w-8 h-8"></i>
+            </div>
+            <span class="text-xl font-semibold text-[#1A1A1A] tracking-tight">BetterWorld</span>
+        </div>
 
         <div class="hidden lg:flex items-center gap-8 text-[#4A4A4A] text-sm font-medium">
             <a href="#" class="hover:text-[#1A1A1A] transition-colors">Platform</a>
@@ -59,94 +44,73 @@ body { font-family: 'Inter', sans-serif; }
         </div>
 
         <div class="hidden lg:flex items-center gap-4">
-            <button class="px-5 py-2.5 rounded-full text-sm font-medium text-[#1A1A1A] hover:bg-[#ECECE6] transition-colors">
-                Sign in
-            </button>
-            <button class="px-5 py-2.5 rounded-full bg-[#1A1A1A] text-white text-sm font-medium hover:bg-[#4A4A4A] shadow-[0_6px_16px_rgba(0,0,0,0.05)] transition-all transform hover:scale-[1.02]">
-                Start fundraising for free
-            </button>
+            <button class="px-5 py-2.5 rounded-full text-sm font-medium text-[#1A1A1A] hover:bg-[#ECECE6] transition-colors">Sign in</button>
+            <button class="px-5 py-2.5 rounded-full bg-[#1A1A1A] text-white text-sm font-medium hover:bg-[#4A4A4A] shadow-[0_6px_16px_rgba(0,0,0,0.05)] transition-all transform hover:scale-[1.02]">Start fundraising for free</button>
         </div>
         
-        <!-- Mobile Menu Icon -->
         <button class="lg:hidden text-[#1A1A1A]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-6 h-6"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+            <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
     </nav>
 
     <!-- Hero Section -->
     <main class="relative max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-8 lg:pt-24 lg:pb-32 grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-        
-        <!-- Left Content -->
         <div class="z-10 flex flex-col relative items-start">
-            
-            <!-- Badge -->
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFEFEA] border border-[rgba(0,0,0,0.06)] mb-8">
                 <span class="w-2 h-2 rounded-full bg-[#F4C84A]"></span>
                 <span class="text-xs font-medium text-[#4A4A4A] uppercase tracking-wide">Mission First Platform</span>
             </div>
 
-            <!-- Headline -->
             <h1 class="lg:text-6xl leading-[1.1] text-4xl font-semibold text-[#1A1A1A] tracking-tight mb-6">
-  Designed to make <br class="">
-  <span class="inline-block relative">
+                Designed to make <br>
+                <span class="inline-block relative">
                     fundraising effortless.
                     <svg class="absolute -bottom-2 left-0 w-full h-3 text-[#F7DE8A] -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                         <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none"></path>
                     </svg>
                 </span>
-</h1>
+            </h1>
 
-            <!-- Subheadline -->
             <p class="text-lg lg:text-xl text-[#4A4A4A] leading-relaxed mb-10 max-w-lg">
                 <span class="italic font-medium text-[#1A1A1A]">So you can spend more time on impact, not admin.</span> 
                 The modern toolkit for non-profits that puts your community first.
             </p>
 
-            <!-- Benefits List -->
             <div class="space-y-4 mb-10">
                 <div class="flex items-center gap-3">
                     <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-3.5 h-3.5 stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <i data-lucide="check" class="w-3.5 h-3.5 stroke-[3]"></i>
                     </div>
                     <span class="text-base text-[#4A4A4A]">Save 30-40 hours per campaign</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-3.5 h-3.5 stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <i data-lucide="check" class="w-3.5 h-3.5 stroke-[3]"></i>
                     </div>
                     <span class="text-base text-[#4A4A4A]">Boost donations by 30%</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-3.5 h-3.5 stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <i data-lucide="check" class="w-3.5 h-3.5 stroke-[3]"></i>
                     </div>
                     <span class="text-base text-[#4A4A4A]">Keep 100% of what you raise</span>
                 </div>
             </div>
 
-            <!-- Input / CTA Area -->
             <div class="relative w-full max-w-md group">
                 <form class="flex items-center bg-white p-2 pl-6 rounded-full shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.03)] transition-shadow duration-300 hover:shadow-[0_16px_48px_rgba(0,0,0,0.10)]">
                     <input type="email" placeholder="Enter your email" class="flex-1 bg-transparent border-none outline-none text-[#1A1A1A] placeholder-[#A0A0A0] text-base h-full py-2">
-                    <button type="button" class="bg-[#F4C84A] hover:bg-[#E9B949] text-[#1A1A1A] px-6 py-3 rounded-full font-medium text-sm transition-colors flex items-center gap-2">
-                        Get started
-                    </button>
+                    <button type="button" class="bg-[#F4C84A] hover:bg-[#E9B949] text-[#1A1A1A] px-6 py-3 rounded-full font-medium text-sm transition-colors flex items-center gap-2">Get started</button>
                 </form>
             </div>
         </div>
 
-        <!-- Right Visuals (Collage) -->
         <div class="relative h-[600px] w-full hidden lg:flex items-center justify-center lg:justify-end">
-            
-            <!-- Soft Gradient Backdrop -->
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#F7DE8A]/20 via-[#CFE6DA]/20 to-transparent rounded-full blur-3xl -z-10"></div>
 
-            <!-- Main Card (Woman on Laptop) -->
             <div class="absolute right-0 top-10 w-[300px] sm:w-[380px] h-[480px] rounded-[40px] overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.10)] border-[6px] border-white z-10 transform rotate-[-2deg]">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Woman working" class="w-full h-full object-cover">
-                <!-- Overlay Gradient -->
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Woman working" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                <!-- In-image caption -->
                 <div class="absolute bottom-6 left-6 right-6">
                     <div class="bg-white/90 backdrop-blur-md p-4 rounded-[20px] flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-[#E9B949] flex items-center justify-center text-white font-bold text-sm">SW</div>
@@ -158,14 +122,13 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
             </div>
 
-            <!-- Floating Card 1: Auction Item -->
             <div class="absolute left-0 sm:-left-8 top-0 bg-white p-4 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-64 border border-[rgba(0,0,0,0.04)] z-20 transform hover:-translate-y-1 transition-transform duration-500">
                 <div class="h-32 rounded-[16px] overflow-hidden mb-3 relative">
-                    <img src="https://images.unsplash.com/photo-1745602649736-9db876991976?w=800&amp;q=80" alt="Art Gallery" class="w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1745602649736-9db876991976?w=800&q=80" alt="Art Gallery" class="w-full h-full object-cover">
                     <div class="absolute top-2 right-2 bg-white/90 backdrop-blur rounded-full px-2 py-1 text-[10px] font-semibold text-[#1A1A1A]">2h left</div>
                 </div>
                 <div class="flex justify-between items-start mb-2">
-                    <div class="">
+                    <div>
                         <h3 class="text-sm font-semibold text-[#1A1A1A]">Modern Art Tour</h3>
                         <p class="text-xs text-[#7A7A7A]">Washington D.C.</p>
                     </div>
@@ -177,15 +140,13 @@ body { font-family: 'Inter', sans-serif; }
                 <button class="w-full py-2 rounded-full bg-[#F6F6F4] text-[#1A1A1A] text-xs font-medium hover:bg-[#EFEFEA] transition-colors">Place Bid</button>
             </div>
 
-            <!-- Floating Card 2: Mobile Donation Flow -->
             <div class="absolute bottom-0 left-4 sm:left-10 bg-white p-2 rounded-[32px] shadow-[0_20px_40px_rgba(0,0,0,0.12)] z-30 w-48 border border-[rgba(0,0,0,0.04)] transform rotate-3">
                 <div class="bg-[#F9F9F7] rounded-[24px] p-4 flex flex-col items-center text-center h-full">
                     <div class="w-10 h-10 rounded-full bg-[#ECECE6] mb-3 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=200&amp;q=80" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover">
                     </div>
                     <p class="text-xs font-semibold text-[#1A1A1A] mb-1">Animal Rescue</p>
                     <p class="text-[10px] text-[#7A7A7A] mb-3 leading-tight">Help us build a new shelter wing.</p>
-                    
                     <div class="grid grid-cols-2 gap-2 w-full mb-3">
                         <div class="bg-white rounded-lg py-1.5 border border-[#EFEFEA] text-[10px] font-medium text-[#1A1A1A]">$25</div>
                         <div class="bg-[#F4C84A] rounded-lg py-1.5 border border-[#F4C84A] text-[10px] font-medium text-[#1A1A1A] shadow-sm">$50</div>
@@ -196,11 +157,10 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
             </div>
 
-            <!-- Floating Card 3: Runners (Success Metrics) -->
             <div class="absolute top-0 right-[-20px] sm:right-[-30px] bg-white p-4 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-44 z-20 border border-[rgba(0,0,0,0.04)] hidden sm:block">
                <div class="flex items-center gap-3 mb-3">
                     <div class="w-10 h-10 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trophy" class="lucide lucide-trophy w-5 h-5 stroke-[1.5]"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                        <i data-lucide="trophy" class="w-5 h-5 stroke-[1.5]"></i>
                     </div>
                     <div>
                         <p class="text-xs text-[#7A7A7A]">Goal Reached</p>
@@ -211,24 +171,12 @@ body { font-family: 'Inter', sans-serif; }
                    <div class="h-full bg-[#7BC47F] w-[85%] rounded-full"></div>
                </div>
             </div>
-
-            <!-- Decorative Elements -->
-            <div class="absolute top-1/2 left-1/4 w-3 h-3 bg-[#F4C84A] rounded-full opacity-60"></div>
-            <div class="absolute bottom-1/4 right-0 w-2 h-2 bg-[#9DB08F] rounded-full opacity-60"></div>
-            <div class="absolute top-0 right-1/4 w-4 h-4 bg-[#CFE6DA] rounded-full opacity-60"></div>
-
         </div>
-
     </main>
 
-    <!-- New Sections Container -->
     <div class="w-full max-w-7xl mx-auto px-6 pt-12 pb-20 lg:py-20 space-y-24">
-
-        <!-- Hero Section -->
         <section class="text-center max-w-4xl mx-auto space-y-8">
-            
-            <!-- Soft Badge / Human Presence Indicator -->
-            <div class="inline-flex items-center gap-3 bg-[#EFEFEA] pr-5 pl-2 py-1.5 rounded-full border border-black/5 animate-fade-in-up">
+            <div class="inline-flex items-center gap-3 bg-[#EFEFEA] pr-5 pl-2 py-1.5 rounded-full border border-black/5">
                 <div class="flex -space-x-2">
                     <img src="https://i.pravatar.cc/100?img=5" alt="User" class="w-8 h-8 rounded-full border-2 border-[#EFEFEA]">
                     <img src="https://i.pravatar.cc/100?img=9" alt="User" class="w-8 h-8 rounded-full border-2 border-[#EFEFEA]">
@@ -237,43 +185,31 @@ body { font-family: 'Inter', sans-serif; }
                 <span class="text-xs font-medium text-secondary">Trusted by 105,000+ nonprofits</span>
             </div>
 
-            <!-- Heading -->
             <div class="space-y-6">
                 <h1 class="lg:text-6xl leading-[1.1] text-4xl font-semibold text-[#1A1A1A] tracking-tight mb-6">
                     Raise more and keep<br> <span class="text-[#7A7A7A]">more of what you raise</span>
                 </h1>
-                
                 <p class="text-lg md:text-xl text-secondary font-normal leading-relaxed max-w-2xl mx-auto">
                     BetterWorld is the fastest-growing fundraising platform. We help you raise more, keep more, and grow faster—with no hidden fees or clunky tools.
                 </p>
             </div>
 
-            <!-- CTA Area -->
             <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <button class="h-12 px-8 bg-[#F4C84A] hover:bg-[#F7DE8A] text-[#1A1A1A] text-sm font-medium rounded-full shadow-[0_6px_16px_rgba(244,200,74,0.3)] hover:shadow-[0_10px_28px_rgba(244,200,74,0.4)] transition-all transform active:scale-95 flex items-center gap-2">
                     Get a platform walkthrough
                     <i data-lucide="arrow-right" class="w-4 h-4 opacity-70"></i>
                 </button>
-                <button class="h-12 px-8 bg-white border border-black/5 text-secondary text-sm font-medium rounded-full hover:bg-gray-50 transition-colors">
-                    View demo
-                </button>
+                <button class="h-12 px-8 bg-white border border-black/5 text-secondary text-sm font-medium rounded-full hover:bg-gray-50 transition-colors">View demo</button>
             </div>
         </section>
 
-        <!-- Feature Cards Grid -->
-        <!-- Redesigned as cards over tables/columns for "cushion-like" feel -->
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- Card 1: Keep More -->
             <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#CFE6DA] text-[#4A7A5E] flex items-center justify-center mb-6">
                     <i data-lucide="piggy-bank" class="w-6 h-6 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-lg font-semibold text-primary mb-3">Keep more</h3>
-                <p class="text-sm text-secondary leading-relaxed">
-                    Every dollar goes directly to your mission.
-                </p>
-                <!-- Visual Progress Element -->
+                <p class="text-sm text-secondary leading-relaxed">Every dollar goes directly to your mission.</p>
                 <div class="mt-auto pt-8">
                    <div class="flex items-center justify-between text-xs font-medium text-tertiary mb-2">
                        <span>Funds retained</span>
@@ -285,32 +221,25 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
             </div>
 
-            <!-- Card 2: Save Time -->
             <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#F7DE8A] text-[#8C6D1F] flex items-center justify-center mb-6">
                     <i data-lucide="clock" class="w-6 h-6 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-lg font-semibold text-primary mb-3">Save time</h3>
-                <p class="text-sm text-secondary leading-relaxed">
-                    Launch campaigns in minutes and reclaim 60-80 hours a year with automated tools.
-                </p>
+                <p class="text-sm text-secondary leading-relaxed">Launch campaigns in minutes and reclaim 60-80 hours a year with automated tools.</p>
                 <div class="mt-auto pt-8 flex items-center gap-3">
                     <div class="px-3 py-1 bg-white rounded-full text-xs font-medium text-secondary shadow-sm border border-black/5">Automated</div>
                     <div class="px-3 py-1 bg-white rounded-full text-xs font-medium text-secondary shadow-sm border border-black/5">Fast</div>
                 </div>
             </div>
 
-            <!-- Card 3: Grow Faster -->
             <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#E9B949] text-white flex items-center justify-center mb-6 opacity-90">
                     <i data-lucide="trending-up" class="w-6 h-6 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-lg font-semibold text-primary mb-3">Grow faster</h3>
-                <p class="text-sm text-secondary leading-relaxed">
-                    Donor-friendly design proven to increase giving by an average of 30%.
-                </p>
+                <p class="text-sm text-secondary leading-relaxed">Donor-friendly design proven to increase giving by an average of 30%.</p>
                 <div class="mt-auto pt-6">
-                    <!-- Simple mini chart visualization -->
                     <div class="flex items-end gap-1 h-10 w-24">
                         <div class="w-full bg-[#EFEFEA] rounded-t-sm h-[40%]"></div>
                         <div class="w-full bg-[#EFEFEA] rounded-t-sm h-[60%]"></div>
@@ -320,15 +249,12 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
             </div>
 
-            <!-- Card 4: Feel Supported -->
             <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#EFEFEA] text-[#7A7A7A] flex items-center justify-center mb-6">
                     <i data-lucide="heart-handshake" class="w-6 h-6 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-lg font-semibold text-primary mb-3">Feel supported</h3>
-                <p class="text-sm text-secondary leading-relaxed">
-                    Best-in-class support at every step of your fundraising journey.
-                </p>
+                <p class="text-sm text-secondary leading-relaxed">Best-in-class support at every step of your fundraising journey.</p>
                 <div class="mt-auto pt-8 flex -space-x-2">
                     <div class="w-8 h-8 rounded-full bg-[#ECECE6] border-2 border-white flex items-center justify-center text-[10px] text-secondary">CS</div>
                     <div class="w-8 h-8 rounded-full bg-[#D4D4D0] border-2 border-white flex items-center justify-center text-[10px] text-secondary">JD</div>
@@ -337,23 +263,15 @@ body { font-family: 'Inter', sans-serif; }
             </div>
         </section>
 
-        <!-- Social Proof / Footer Section -->
-        <!-- Replacing the harsh red block with a warm panel container -->
         <section class="w-full bg-[#EFEFEA] rounded-[48px] p-10 md:p-16 text-center shadow-sm relative overflow-hidden">
-            
-            <!-- Background Decoration (Subtle Gradients) -->
             <div class="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
                 <div class="absolute top-[-20%] left-[10%] w-96 h-96 bg-[#F4C84A] rounded-full blur-[120px]"></div>
                 <div class="absolute bottom-[-20%] right-[10%] w-96 h-96 bg-[#9DB08F] rounded-full blur-[120px]"></div>
             </div>
-
             <div class="relative z-10 max-w-3xl mx-auto">
                 <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-primary mb-12">
-                    Join 105,000+ amazing nonprofits,<br>
-                    organizations, and fundraisers on BetterWorld
+                    Join 105,000+ amazing nonprofits,<br>organizations, and fundraisers on BetterWorld
                 </h2>
-
-                <!-- Logo Grid -->
                 <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 [&>img]:brightness-0">
                     <img src="https://betterworld.org/_astro/usacycling_ZcXosd.svg" alt="USA Cycling" class="h-6 w-auto">
                     <img src="https://betterworld.org/_astro/fbla_Z1ESSME.svg" alt="FBLA" class="h-6 w-auto">
@@ -361,22 +279,14 @@ body { font-family: 'Inter', sans-serif; }
                     <img src="https://betterworld.org/_astro/boysandgirlsclub_2ptMG4.svg" alt="Boys & Girls Club" class="h-6 w-auto">
                     <img src="https://betterworld.org/_astro/makeawish_27Lzz5.svg" alt="Make A Wish" class="h-6 w-auto">
                     <img src="https://betterworld.org/_astro/younglife_1iGknD.svg" alt="Young Life" class="h-6 w-auto">
-                    <img src="https://betterworld.org/_astro/uvahealthsystem_1bdCd2.svg" alt="University of Virginia Health System" class="h-6 w-auto">
-                    <img src="https://betterworld.org/_astro/smithsonian_ZwTP9R.svg" alt="Smithsonian Libraries & Archives" class="h-6 w-auto">
                 </div>
             </div>
         </section>
-
     </div>
 
-    <!-- Fundraising Suite Section -->
     <section class="w-full py-20 px-6 md:px-8 lg:px-12 max-w-[1400px] mx-auto">
-        
-        <!-- Header Section -->
         <div class="max-w-3xl mx-auto text-center mb-16 md:mb-24">
-            <span class="inline-block py-1 px-3 rounded-full bg-[#E9B949]/10 border border-[#E9B949]/20 text-[#9DB08F] text-xs font-semibold tracking-widest uppercase mb-6">
-                Fundraising Suite
-            </span>
+            <span class="inline-block py-1 px-3 rounded-full bg-[#E9B949]/10 border border-[#E9B949]/20 text-[#9DB08F] text-xs font-semibold tracking-widest uppercase mb-6">Fundraising Suite</span>
             <h2 class="lg:text-6xl leading-[1.1] text-4xl font-semibold text-[#1A1A1A] tracking-tight mb-6">
                 BetterWorld helps nonprofits <br class="hidden md:block"> raise money in less time.
             </h2>
@@ -385,18 +295,10 @@ body { font-family: 'Inter', sans-serif; }
             </p>
         </div>
 
-        <!-- Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            
-            <!-- Left Side: Visual Dashboard Simulation -->
             <div class="relative w-full order-2 lg:order-1">
-                <!-- Decorative Backdrop Blob -->
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#E9B949]/20 via-[#F6F6F4] to-[#9DB08F]/20 rounded-full blur-3xl opacity-60 -z-10"></div>
-
-                <!-- Main UI Card -->
                 <div class="relative bg-[#F9F9F7] rounded-[32px] p-2 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.06)] overflow-hidden transition-transform hover:scale-[0.99] duration-500">
-                    
-                    <!-- Card Header / Nav Simulation -->
                     <div class="flex items-center justify-between px-6 py-4 border-b border-[rgba(0,0,0,0.06)]">
                         <div class="flex items-center gap-2">
                             <div class="w-2.5 h-2.5 rounded-full bg-[#E9B949]"></div>
@@ -411,11 +313,8 @@ body { font-family: 'Inter', sans-serif; }
                             <span class="text-xs text-[#7A7A7A] font-medium">+124</span>
                         </div>
                     </div>
-
-                    <!-- Inner Content -->
                     <div class="p-6">
                         <div class="flex flex-col gap-6">
-                            <!-- Image Area -->
                             <div class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden group">
                                 <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Vineyard">
                                 <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
@@ -423,8 +322,6 @@ body { font-family: 'Inter', sans-serif; }
                                     <span class="text-xs font-semibold text-[#1A1A1A]">Live Now</span>
                                 </div>
                             </div>
-
-                            <!-- Item Details -->
                             <div class="space-y-4">
                                 <div class="flex justify-between items-start">
                                     <div>
@@ -435,8 +332,6 @@ body { font-family: 'Inter', sans-serif; }
                                         <i data-lucide="heart" class="w-5 h-5"></i>
                                     </button>
                                 </div>
-
-                                <!-- Progress/Stats -->
                                 <div class="bg-white rounded-2xl p-5 border border-[rgba(0,0,0,0.06)] shadow-[0_6px_16px_rgba(0,0,0,0.03)]">
                                     <div class="flex justify-between items-end mb-4">
                                         <div>
@@ -451,16 +346,11 @@ body { font-family: 'Inter', sans-serif; }
                                             </span>
                                         </div>
                                     </div>
-                                    
-                                    <!-- Progress Bar -->
                                     <div class="w-full h-2 bg-[#F6F6F4] rounded-full overflow-hidden mb-4">
                                         <div class="h-full bg-[#F4C84A] w-[75%] rounded-full"></div>
                                     </div>
-
                                     <div class="flex gap-3">
-                                        <button class="flex-1 h-10 bg-[#F4C84A] hover:bg-[#F7DE8A] text-[#1A1A1A] font-medium rounded-full transition-colors flex items-center justify-center gap-2 text-sm shadow-[0_4px_12px_rgba(244,200,74,0.3)]">
-                                            Place Bid
-                                        </button>
+                                        <button class="flex-1 h-10 bg-[#F4C84A] hover:bg-[#F7DE8A] text-[#1A1A1A] font-medium rounded-full transition-colors flex items-center justify-center gap-2 text-sm shadow-[0_4px_12px_rgba(244,200,74,0.3)]">Place Bid</button>
                                         <div class="flex -space-x-2 items-center px-2">
                                             <img src="https://i.pravatar.cc/100?img=33" alt="Bidder" class="w-8 h-8 rounded-full border-2 border-white ring-1 ring-black/5">
                                             <span class="text-xs text-[#7A7A7A] pl-4">Highest bidder</span>
@@ -471,13 +361,9 @@ body { font-family: 'Inter', sans-serif; }
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <!-- Right Side: Feature Accordion -->
             <div id="feature-accordion" class="flex flex-col justify-center space-y-4 order-1 lg:order-2">
-                
-                <!-- Accordion Item: Auctions -->
                 <div class="accordion-item active group relative pl-6 border-l-2 border-[#F4C84A] transition-all duration-300 cursor-pointer" data-item="auctions">
                     <div class="accordion-header py-4 pr-4 transition-all rounded-xl hidden">
                         <h3 class="text-lg font-medium text-[#7A7A7A] group-hover:text-[#1A1A1A] transition-colors flex items-center gap-3">
@@ -501,7 +387,6 @@ body { font-family: 'Inter', sans-serif; }
                     </div>
                 </div>
 
-                <!-- Accordion Item: Giveaways -->
                 <div class="accordion-item group relative pl-6 border-l-2 border-transparent hover:border-[#E9B949]/30 transition-all duration-300 cursor-pointer" data-item="giveaways">
                     <div class="accordion-header py-4 pr-4 transition-all hover:bg-white/50 rounded-xl">
                         <h3 class="text-lg font-medium text-[#7A7A7A] group-hover:text-[#1A1A1A] transition-colors flex items-center gap-3">
@@ -516,16 +401,11 @@ body { font-family: 'Inter', sans-serif; }
                             </div>
                             <h3 class="text-xl font-semibold text-[#1A1A1A]">Giveaways</h3>
                         </div>
-                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">
-                            Run exciting raffles and giveaways that engage your community and boost donations. Easy ticket sales and automatic winner selection.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors hover:translate-x-1 duration-200">
-                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                        </a>
+                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">Run exciting raffles and giveaways that engage your community and boost donations.</p>
+                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors">Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
                     </div>
                 </div>
 
-                <!-- Accordion Item: Ticketing -->
                 <div class="accordion-item group relative pl-6 border-l-2 border-transparent hover:border-[#E9B949]/30 transition-all duration-300 cursor-pointer" data-item="ticketing">
                     <div class="accordion-header py-4 pr-4 transition-all hover:bg-white/50 rounded-xl">
                         <h3 class="text-lg font-medium text-[#7A7A7A] group-hover:text-[#1A1A1A] transition-colors flex items-center gap-3">
@@ -535,21 +415,14 @@ body { font-family: 'Inter', sans-serif; }
                     </div>
                     <div class="accordion-content hidden bg-white rounded-2xl p-6 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.06)] relative z-10 transition-all duration-300">
                         <div class="flex items-center gap-3 mb-3">
-                            <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]">
-                                <i data-lucide="ticket" class="w-5 h-5"></i>
-                            </div>
+                            <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]"><i data-lucide="ticket" class="w-5 h-5"></i></div>
                             <h3 class="text-xl font-semibold text-[#1A1A1A]">Ticketing</h3>
                         </div>
-                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">
-                            Sell tickets to your events seamlessly with custom pricing tiers, early bird discounts, and mobile-friendly check-in for attendees.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors hover:translate-x-1 duration-200">
-                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                        </a>
+                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">Sell tickets to your events seamlessly with custom pricing tiers and mobile-friendly check-in.</p>
+                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors">Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
                     </div>
                 </div>
 
-                <!-- Accordion Item: Crowdfunding -->
                 <div class="accordion-item group relative pl-6 border-l-2 border-transparent hover:border-[#E9B949]/30 transition-all duration-300 cursor-pointer" data-item="crowdfunding">
                     <div class="accordion-header py-4 pr-4 transition-all hover:bg-white/50 rounded-xl">
                         <h3 class="text-lg font-medium text-[#7A7A7A] group-hover:text-[#1A1A1A] transition-colors flex items-center gap-3">
@@ -559,21 +432,14 @@ body { font-family: 'Inter', sans-serif; }
                     </div>
                     <div class="accordion-content hidden bg-white rounded-2xl p-6 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.06)] relative z-10 transition-all duration-300">
                         <div class="flex items-center gap-3 mb-3">
-                            <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]">
-                                <i data-lucide="users" class="w-5 h-5"></i>
-                            </div>
+                            <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]"><i data-lucide="users" class="w-5 h-5"></i></div>
                             <h3 class="text-xl font-semibold text-[#1A1A1A]">Crowdfunding</h3>
                         </div>
-                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">
-                            Launch powerful peer-to-peer campaigns that empower supporters to fundraise on your behalf and expand your reach exponentially.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors hover:translate-x-1 duration-200">
-                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                        </a>
+                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">Launch powerful peer-to-peer campaigns that empower supporters to fundraise on your behalf.</p>
+                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors">Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
                     </div>
                 </div>
 
-                <!-- Accordion Item: Impact Giving -->
                 <div class="accordion-item group relative pl-6 border-l-2 border-transparent hover:border-[#E9B949]/30 transition-all duration-300 cursor-pointer" data-item="impact-giving">
                     <div class="accordion-header py-4 pr-4 transition-all hover:bg-white/50 rounded-xl">
                         <h3 class="text-lg font-medium text-[#7A7A7A] group-hover:text-[#1A1A1A] transition-colors flex items-center gap-3">
@@ -583,498 +449,172 @@ body { font-family: 'Inter', sans-serif; }
                     </div>
                     <div class="accordion-content hidden bg-white rounded-2xl p-6 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.06)] relative z-10 transition-all duration-300">
                         <div class="flex items-center gap-3 mb-3">
-                            <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]">
-                                <i data-lucide="heart-handshake" class="w-5 h-5"></i>
-                            </div>
+                            <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]"><i data-lucide="heart-handshake" class="w-5 h-5"></i></div>
                             <h3 class="text-xl font-semibold text-[#1A1A1A]">Impact Giving</h3>
                         </div>
-                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">
-                            Show donors exactly where their money goes with tangible impact items. Let supporters fund specific needs and see real results.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors hover:translate-x-1 duration-200">
-                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                        </a>
+                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">Show donors exactly where their money goes with tangible impact items.</p>
+                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors">Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
                     </div>
                 </div>
-
-                <!-- Accordion Item: Paddle Raise -->
-                <div class="accordion-item group relative pl-6 border-l-2 border-transparent hover:border-[#E9B949]/30 transition-all duration-300 cursor-pointer" data-item="paddle-raise">
-                    <div class="accordion-header py-4 pr-4 transition-all hover:bg-white/50 rounded-xl">
-                        <h3 class="text-lg font-medium text-[#7A7A7A] group-hover:text-[#1A1A1A] transition-colors flex items-center gap-3">
-                            <i data-lucide="hand" class="w-5 h-5 text-[#BDBDB5] group-hover:text-[#F4C84A] transition-colors"></i>
-                            Paddle Raise
-                        </h3>
-                    </div>
-                    <div class="accordion-content hidden bg-white rounded-2xl p-6 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.06)] relative z-10 transition-all duration-300">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]">
-                                <i data-lucide="hand" class="w-5 h-5"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold text-[#1A1A1A]">Paddle Raise</h3>
-                        </div>
-                        <p class="text-[#7A7A7A] leading-relaxed mb-4 text-base">
-                            Maximize live event donations with digital paddle raises. Guests can give from their phones while the energy in the room builds.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-sm font-medium text-[#1A1A1A] hover:text-[#E9B949] transition-colors hover:translate-x-1 duration-200">
-                            Learn more <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="max-w-[1400px] mx-auto px-6 py-20 w-full relative">
-        
-        <!-- Header -->
         <div class="text-center mb-16 space-y-3">
-            <h2 class="text-[32px] md:text-[36px] font-semibold tracking-tight text-[#1A1A1A]">
-                Hear from our customers
-            </h2>
-            <p class="text-[#7A7A7A] text-lg font-normal">
-                Don't just take our word for it
-            </p>
+            <h2 class="text-[32px] md:text-[36px] font-semibold tracking-tight text-[#1A1A1A]">Hear from our customers</h2>
+            <p class="text-[#7A7A7A] text-lg font-normal">Don't just take our word for it</p>
         </div>
 
-        <!-- Carousel / Grid Container -->
-        <div class="relative group">
-            
-            <!-- Previous Button (Floating) -->
-            <button class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-[0_6px_16px_rgba(0,0,0,0.05)] border border-[rgba(0,0,0,0.06)] flex items-center justify-center text-[#1A1A1A] hover:scale-105 hover:shadow-[0_10px_28px_rgba(0,0,0,0.07)] transition-all duration-300 hidden xl:flex">
-                <i data-lucide="arrow-left" class="w-5 h-5 stroke-[1.5]"></i>
-            </button>
-
-            <!-- Cards Layout -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-
-                <!-- Card 1: GetApp -->
-                <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
-                    <!-- Subtle Gradient Decoration -->
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#F7DE8A]/20 to-transparent rounded-bl-full pointer-events-none"></div>
-
-                    <!-- Header: Quote & Logo -->
-                    <div class="flex justify-between items-start mb-6">
-                        <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
-                        <!-- Logo Pill -->
-                        <div class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)] flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-cyan-500"></div>
-                            <span class="text-sm font-semibold text-[#1A1A1A] tracking-tight">GetApp</span>
-                        </div>
-                    </div>
-
-                    <!-- Body Text -->
-                    <p class="text-[15px] leading-relaxed text-[#4A4A4A] mb-8 flex-grow">
-                        We love BetterWorld! We have used the auction, donation campaign and giveaways functions. They have all been easy to set-up and for auctions, the outbid alert feature has had such a positive effect on the final monetary outcome.
-                    </p>
-
-                    <!-- Footer: Human Presence -->
-                    <div class="flex items-center gap-4 pt-6 border-t border-[rgba(0,0,0,0.06)]">
-                        <!-- Avatar -->
-                        <div class="w-10 h-10 rounded-full bg-[#E9B949] flex items-center justify-center text-[#1A1A1A] font-medium text-sm">
-                            RA
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold text-[#1A1A1A]">Rickie A.</span>
-                            <span class="text-xs text-[#7A7A7A]">Nonprofit Org Management</span>
-                            <span class="text-[10px] text-[#A0A0A0] mt-0.5">Has loved BetterWorld for: 2+ years</span>
-                        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#F7DE8A]/20 to-transparent rounded-bl-full pointer-events-none"></div>
+                <div class="flex justify-between items-start mb-6">
+                    <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
+                    <div class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)] flex items-center gap-2">
+                        <div class="w-2 h-2 rounded-full bg-cyan-500"></div>
+                        <span class="text-sm font-semibold text-[#1A1A1A] tracking-tight">GetApp</span>
                     </div>
                 </div>
-
-                <!-- Card 2: Software Advice -->
-                <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
-                    <!-- Subtle Gradient Decoration -->
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#9DB08F]/20 to-transparent rounded-bl-full pointer-events-none"></div>
-
-                    <!-- Header: Quote & Logo -->
-                    <div class="flex justify-between items-start mb-6">
-                        <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
-                        <div class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)] flex items-center gap-2">
-                            <i data-lucide="zap" class="w-3 h-3 text-orange-500 fill-orange-500"></i>
-                            <span class="text-sm font-semibold text-[#1A1A1A] tracking-tight">Software Advice</span>
-                        </div>
-                    </div>
-
-                    <!-- Body Text -->
-                    <p class="text-[15px] leading-relaxed text-[#4A4A4A] mb-8 flex-grow">
-                        The staff are very knowledgeable on all the aspects of the software and how to apply them to our specific events. The software itself covers every conceivable subset of running a large-scale auction and fundraising event.
-                    </p>
-
-                    <!-- Footer: Human Presence -->
-                    <div class="flex items-center gap-4 pt-6 border-t border-[rgba(0,0,0,0.06)]">
-                        <div class="w-10 h-10 rounded-full bg-[#9DB08F] flex items-center justify-center text-[#1A1A1A] font-medium text-sm">
-                            RG
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold text-[#1A1A1A]">Randy G.</span>
-                            <span class="text-xs text-[#7A7A7A]">Logistics and Supply Chain</span>
-                            <span class="text-[10px] text-[#A0A0A0] mt-0.5">Has loved BetterWorld for: 2+ years</span>
-                        </div>
+                <p class="text-[15px] leading-relaxed text-[#4A4A4A] mb-8 flex-grow">
+                    We love BetterWorld! We have used the auction, donation campaign and giveaways functions. They have all been easy to set-up and for auctions, the outbid alert feature has had such a positive effect on the final monetary outcome.
+                </p>
+                <div class="flex items-center gap-4 pt-6 border-t border-[rgba(0,0,0,0.06)]">
+                    <div class="w-10 h-10 rounded-full bg-[#E9B949] flex items-center justify-center text-[#1A1A1A] font-medium text-sm">RA</div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-semibold text-[#1A1A1A]">Rickie A.</span>
+                        <span class="text-xs text-[#7A7A7A]">Nonprofit Org Management</span>
                     </div>
                 </div>
-
-                <!-- Card 3: Capterra -->
-                <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
-                    <!-- Subtle Gradient Decoration -->
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#6FA8DC]/10 to-transparent rounded-bl-full pointer-events-none"></div>
-
-                    <!-- Header: Quote & Logo -->
-                    <div class="flex justify-between items-start mb-6">
-                        <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
-                        <div class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)] flex items-center gap-2">
-                            <i data-lucide="compass" class="w-3 h-3 text-purple-600"></i>
-                            <span class="text-sm font-semibold text-[#1A1A1A] tracking-tight">Capterra</span>
-                        </div>
-                    </div>
-
-                    <!-- Body Text -->
-                    <p class="text-[15px] leading-relaxed text-[#4A4A4A] mb-8 flex-grow">
-                        As I mentioned before, once I had reviewed how BetterWorld worked, and how it could streamline the auction process for my company, I was sold. Trouble-free and easy to learn - even for an old guy like me!
-                    </p>
-
-                    <!-- Footer: Human Presence -->
-                    <div class="flex items-center gap-4 pt-6 border-t border-[rgba(0,0,0,0.06)]">
-                        <div class="w-10 h-10 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A] font-medium text-sm">
-                            EH
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold text-[#1A1A1A]">Ed (Edwin) H.</span>
-                            <span class="text-xs text-[#7A7A7A]">Auction Coordinator</span>
-                            <span class="text-[10px] text-[#A0A0A0] mt-0.5">Has loved BetterWorld for: 6 months</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
-            <!-- Next Button (Floating) -->
-            <button class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-[0_6px_16px_rgba(0,0,0,0.05)] border border-[rgba(0,0,0,0.06)] flex items-center justify-center text-[#1A1A1A] hover:scale-105 hover:shadow-[0_10px_28px_rgba(0,0,0,0.07)] transition-all duration-300 hidden xl:flex">
-                <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5]"></i>
-            </button>
-        </div>
+            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#9DB08F]/20 to-transparent rounded-bl-full pointer-events-none"></div>
+                <div class="flex justify-between items-start mb-6">
+                    <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
+                    <div class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)] flex items-center gap-2">
+                        <i data-lucide="zap" class="w-3 h-3 text-orange-500 fill-orange-500"></i>
+                        <span class="text-sm font-semibold text-[#1A1A1A] tracking-tight">Software Advice</span>
+                    </div>
+                </div>
+                <p class="text-[15px] leading-relaxed text-[#4A4A4A] mb-8 flex-grow">
+                    The staff are very knowledgeable on all the aspects of the software and how to apply them to our specific events. The software itself covers every conceivable subset of running a large-scale auction and fundraising event.
+                </p>
+                <div class="flex items-center gap-4 pt-6 border-t border-[rgba(0,0,0,0.06)]">
+                    <div class="w-10 h-10 rounded-full bg-[#9DB08F] flex items-center justify-center text-[#1A1A1A] font-medium text-sm">RG</div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-semibold text-[#1A1A1A]">Randy G.</span>
+                        <span class="text-xs text-[#7A7A7A]">Logistics and Supply Chain</span>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Pagination Dots -->
-        <div class="flex justify-center items-center gap-3 mt-12">
-            <button class="w-2.5 h-2.5 rounded-full bg-[#D1D1D1] hover:bg-[#A0A0A0] transition-colors"></button>
-            <button class="w-2.5 h-2.5 rounded-full bg-[#D1D1D1] hover:bg-[#A0A0A0] transition-colors"></button>
-            <button class="w-8 h-2.5 rounded-full bg-[#F4C84A] transition-colors"></button>
-            <button class="w-2.5 h-2.5 rounded-full bg-[#D1D1D1] hover:bg-[#A0A0A0] transition-colors"></button>
-            <button class="w-2.5 h-2.5 rounded-full bg-[#D1D1D1] hover:bg-[#A0A0A0] transition-colors"></button>
+            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#6FA8DC]/10 to-transparent rounded-bl-full pointer-events-none"></div>
+                <div class="flex justify-between items-start mb-6">
+                    <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
+                    <div class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)] flex items-center gap-2">
+                        <i data-lucide="compass" class="w-3 h-3 text-purple-600"></i>
+                        <span class="text-sm font-semibold text-[#1A1A1A] tracking-tight">Capterra</span>
+                    </div>
+                </div>
+                <p class="text-[15px] leading-relaxed text-[#4A4A4A] mb-8 flex-grow">
+                    As I mentioned before, once I had reviewed how BetterWorld worked, and how it could streamline the auction process for my company, I was sold. Trouble-free and easy to learn - even for an old guy like me!
+                </p>
+                <div class="flex items-center gap-4 pt-6 border-t border-[rgba(0,0,0,0.06)]">
+                    <div class="w-10 h-10 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A] font-medium text-sm">EH</div>
+                    <div class="flex flex-col">
+                        <span class="text-sm font-semibold text-[#1A1A1A]">Ed (Edwin) H.</span>
+                        <span class="text-xs text-[#7A7A7A]">Auction Coordinator</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
-    <!-- Why BetterWorld Section -->
     <section class="w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-20">
-        
-        <!-- Header Section -->
         <div class="max-w-3xl mx-auto text-center mb-16 md:mb-20">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[#1A1A1A] mb-6">
-                Why use BetterWorld for Fundraising?
-            </h2>
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[#1A1A1A] mb-6">Why use BetterWorld for Fundraising?</h2>
             <p class="text-lg md:text-xl text-[#4A4A4A] leading-relaxed">
-                BetterWorld was designed to ensure nonprofits are never constrained by their budgets in the pursuit of doing good. We support your nonprofit with beautiful, simple, and effective <span class="text-[#1A1A1A] font-medium border-b-2 border-[#F4C84A]/40">online fundraising tools</span> that help you convert more donors.
+                BetterWorld was designed to ensure nonprofits are never constrained by their budgets in the pursuit of doing good.
             </p>
         </div>
 
-        <!-- Features Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-
-            <!-- Card 1: Keep 100% -->
             <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[#F4C84A] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="wallet" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1A1A1A] mb-3 tracking-tight">Keep 100%</h3>
-                <p class="text-base text-[#7A7A7A] leading-relaxed">
-                    No matter how large your organization, BetterWorld will always remain 100% free. Even better, over 95% of BetterWorld donors cover credit card fees (2.9% + $0.30).
-                </p>
+                <p class="text-base text-[#7A7A7A] leading-relaxed">No matter how large your organization, BetterWorld will always remain 100% free.</p>
             </div>
 
-            <!-- Card 2: Beautifully Designed -->
             <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
-                     <div class="absolute inset-0 bg-[#9DB08F] opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-[#9DB08F] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="palette" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1A1A1A] mb-3 tracking-tight">Beautifully Designed</h3>
-                <p class="text-base text-[#7A7A7A] leading-relaxed">
-                    BetterWorld campaigns are designed specifically to look beautiful, no matter if your donors are using a phone, tablet, or computer.
-                </p>
+                <p class="text-base text-[#7A7A7A] leading-relaxed">BetterWorld campaigns are designed to look beautiful on any device.</p>
             </div>
 
-            <!-- Card 3: Easy-to-Use -->
             <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
-                     <div class="absolute inset-0 bg-[#CFE6DA] opacity-30 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-[#CFE6DA] opacity-30 group-hover:opacity-40 transition-opacity"></div>
                     <i data-lucide="layers" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1A1A1A] mb-3 tracking-tight">Incredibly Easy-to-Use</h3>
-                <p class="text-base text-[#7A7A7A] leading-relaxed">
-                    We designed BetterWorld specifically with the user experience in mind. Not only is it intuitive for nonprofits, but it is also easy to navigate for donors.
-                </p>
+                <p class="text-base text-[#7A7A7A] leading-relaxed">We designed BetterWorld with the user experience in mind.</p>
             </div>
 
-            <!-- Card 4: Seamlessly Interconnected -->
             <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
-                     <div class="absolute inset-0 bg-[#F7DE8A] opacity-30 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-[#F7DE8A] opacity-30 group-hover:opacity-40 transition-opacity"></div>
                     <i data-lucide="link" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1A1A1A] mb-3 tracking-tight">Seamlessly Interconnected</h3>
-                <p class="text-base text-[#7A7A7A] leading-relaxed">
-                    The BetterWorld platform offers a single place to manage every campaign you need to run for your nonprofit. Streamline operations with a central hub.
-                </p>
+                <p class="text-base text-[#7A7A7A] leading-relaxed">Manage every campaign from a single central hub.</p>
             </div>
 
-            <!-- Card 5: Thoughtfully Automated -->
             <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
-                     <div class="absolute inset-0 bg-[#E9B949] opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-[#E9B949] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="settings" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1A1A1A] mb-3 tracking-tight">Thoughtfully Automated</h3>
-                <p class="text-base text-[#7A7A7A] leading-relaxed">
-                    At BetterWorld, we take great pride in helping nonprofits achieve their online fundraising goals. Our tools are automated to save you time on busywork.
-                </p>
+                <p class="text-base text-[#7A7A7A] leading-relaxed">Our tools are automated to save you time on busywork.</p>
             </div>
 
-            <!-- Card 6: Create a Fundraiser -->
             <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
-                     <div class="absolute inset-0 bg-[#9DB08F] opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-[#9DB08F] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="flag" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1A1A1A] mb-3 tracking-tight">Create a Fundraiser</h3>
-                <p class="text-base text-[#7A7A7A] leading-relaxed">
-                    With our easy-to-use fundraising platform, you can create a donation site in just minutes. Build a beautiful online auction and raise money online.
-                </p>
+                <p class="text-base text-[#7A7A7A] leading-relaxed">Create a donation site in just minutes.</p>
             </div>
-
         </div>
 
-        <!-- Bottom Action -->
         <div class="mt-16 flex justify-center">
             <button class="bg-[#F4C84A] text-[#1A1A1A] hover:bg-[#F7DE8A] font-medium px-8 py-3 rounded-full transition-colors flex items-center gap-2 shadow-sm">
                 Start Fundraising Free
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </button>
         </div>
-
     </section>
 
-    <!-- Always Included Section -->
-    <section class="w-full py-20 px-6 md:px-8 lg:px-12 max-w-[1400px] mx-auto">
-        
-        <!-- Header -->
-        <div class="text-center mb-16 max-w-2xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[#1A1A1A] mb-4">
-                Always included with BetterWorld
-            </h2>
-            <p class="text-lg text-[#4A4A4A] leading-relaxed">
-                Everything you need to run seamless campaigns, built into one friendly platform.
-            </p>
-        </div>
-
-        <!-- Features Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl mx-auto mb-20">
-            
-            <!-- Feature Item 1 -->
-            <div class="flex items-start gap-4 group">
-                <div class="shrink-0 mt-1 flex items-center justify-center w-8 h-8 rounded-full bg-[#E9B949]/10 text-[#E9B949]">
-                    <i data-lucide="check-circle-2" class="w-5 h-5 stroke-[2]"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 tracking-tight group-hover:text-[#9DB08F] transition-colors">5-Minute Set-Up</h3>
-                    <p class="text-[#4A4A4A] leading-relaxed text-base">
-                        Get set up and start raising funds in just a few minutes with our streamlined onboarding.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Feature Item 2 -->
-            <div class="flex items-start gap-4 group">
-                <div class="shrink-0 mt-1 flex items-center justify-center w-8 h-8 rounded-full bg-[#E9B949]/10 text-[#E9B949]">
-                    <i data-lucide="check-circle-2" class="w-5 h-5 stroke-[2]"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 tracking-tight group-hover:text-[#9DB08F] transition-colors">Automated Payments &amp; Receipts</h3>
-                    <p class="text-[#4A4A4A] leading-relaxed text-base">
-                        Save time on burdensome tasks with full automation for payment collection and bookkeeping.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Feature Item 3 -->
-            <div class="flex items-start gap-4 group">
-                <div class="shrink-0 mt-1 flex items-center justify-center w-8 h-8 rounded-full bg-[#E9B949]/10 text-[#E9B949]">
-                    <i data-lucide="shield-check" class="w-5 h-5 stroke-[2]"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 tracking-tight group-hover:text-[#9DB08F] transition-colors">Encrypted &amp; Secure</h3>
-                    <p class="text-[#4A4A4A] leading-relaxed text-base">
-                        Fully PCI-compliant software. All financial data is encrypted to PCI DSS Level 1 standards.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Feature Item 4 -->
-            <div class="flex items-start gap-4 group">
-                <div class="shrink-0 mt-1 flex items-center justify-center w-8 h-8 rounded-full bg-[#E9B949]/10 text-[#E9B949]">
-                    <i data-lucide="upload-cloud" class="w-5 h-5 stroke-[2]"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 tracking-tight group-hover:text-[#9DB08F] transition-colors">Easy to Export</h3>
-                    <p class="text-[#4A4A4A] leading-relaxed text-base">
-                        Every bit of information you enter into our fundraising software can be easily exported.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Feature Item 5 -->
-            <div class="flex items-start gap-4 group">
-                <div class="shrink-0 mt-1 flex items-center justify-center w-8 h-8 rounded-full bg-[#E9B949]/10 text-[#E9B949]">
-                    <i data-lucide="infinity" class="w-5 h-5 stroke-[2]"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 tracking-tight group-hover:text-[#9DB08F] transition-colors">Unlimited Everything</h3>
-                    <p class="text-[#4A4A4A] leading-relaxed text-base">
-                        Run as many campaigns as needed with unlimited items and team members, regardless of size.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Feature Item 6 -->
-            <div class="flex items-start gap-4 group">
-                <div class="shrink-0 mt-1 flex items-center justify-center w-8 h-8 rounded-full bg-[#E9B949]/10 text-[#E9B949]">
-                    <i data-lucide="heart-off" class="w-5 h-5 stroke-[2]"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 tracking-tight group-hover:text-[#9DB08F] transition-colors">No Advertising</h3>
-                    <p class="text-[#4A4A4A] leading-relaxed text-base">
-                        We will never sell advertising space on your page. Banner ads go against our principles.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Feature Item 7 -->
-            <div class="flex items-start gap-4 group">
-                <div class="shrink-0 mt-1 flex items-center justify-center w-8 h-8 rounded-full bg-[#E9B949]/10 text-[#E9B949]">
-                    <i data-lucide="lock" class="w-5 h-5 stroke-[2]"></i>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 tracking-tight group-hover:text-[#9DB08F] transition-colors">Never Sell Donor Data</h3>
-                    <p class="text-[#4A4A4A] leading-relaxed text-base">
-                        Your information is always 100% secure. We have your best interests in mind.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- CTA Button -->
-        <div class="flex justify-center mb-24">
-            <button class="bg-[#F4C84A] hover:bg-[#F7DE8A] text-[#1A1A1A] px-8 py-3.5 rounded-full font-medium text-base shadow-[0_6px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.12)] transition-all active:scale-95 flex items-center gap-2">
-                Get started with BetterWorld today
-                <i data-lucide="arrow-right" class="w-4 h-4 stroke-[2]"></i>
-            </button>
-        </div>
-
-        <!-- Resources Cards Section -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- Card 1 -->
-            <a href="#" class="group block bg-white rounded-[32px] overflow-hidden shadow-[0_10px_28px_rgba(0,0,0,0.07)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.10)] transition-all duration-300 hover:-translate-y-1">
-                <div class="h-48 w-full overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Smiling woman" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-                </div>
-                <div class="p-6 flex flex-col h-[180px] justify-between">
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] leading-tight">What is BetterWorld?</h3>
-                    <div class="flex items-center gap-2 text-sm font-medium text-[#7A7A7A] group-hover:text-[#E9B949] transition-colors">
-                        <i data-lucide="play-circle" class="w-4 h-4 stroke-[2]"></i>
-                        <span>Watch now</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Card 2 -->
-            <a href="#" class="group block bg-white rounded-[32px] overflow-hidden shadow-[0_10px_28px_rgba(0,0,0,0.07)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.10)] transition-all duration-300 hover:-translate-y-1">
-                <div class="h-48 w-full overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Team meeting silhouette" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-                </div>
-                <div class="p-6 flex flex-col h-[180px] justify-between">
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] leading-tight">Get inspired by real fundraisers on BetterWorld</h3>
-                    <div class="flex items-center gap-2 text-sm font-medium text-[#7A7A7A] group-hover:text-[#E9B949] transition-colors">
-                        <i data-lucide="eye" class="w-4 h-4 stroke-[2]"></i>
-                        <span>View demo</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Card 3 -->
-            <a href="#" class="group block bg-white rounded-[32px] overflow-hidden shadow-[0_10px_28px_rgba(0,0,0,0.07)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.10)] transition-all duration-300 hover:-translate-y-1">
-                <div class="h-48 w-full overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="People working together" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-                </div>
-                <div class="p-6 flex flex-col h-[180px] justify-between">
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] leading-tight">Learn how BetterWorld can work for you</h3>
-                    <div class="flex items-center gap-2 text-sm font-medium text-[#7A7A7A] group-hover:text-[#E9B949] transition-colors">
-                        <i data-lucide="compass" class="w-4 h-4 stroke-[2]"></i>
-                        <span>Explore solutions</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Card 4 -->
-            <a href="#" class="group block bg-white rounded-[32px] overflow-hidden shadow-[0_10px_28px_rgba(0,0,0,0.07)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.10)] transition-all duration-300 hover:-translate-y-1">
-                <div class="h-48 w-full overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Office discussion" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-                </div>
-                <div class="p-6 flex flex-col h-[180px] justify-between">
-                    <h3 class="text-lg font-semibold text-[#1A1A1A] leading-tight">The ultimate guide for great auction items</h3>
-                    <div class="flex items-center gap-2 text-sm font-medium text-[#7A7A7A] group-hover:text-[#E9B949] transition-colors">
-                        <i data-lucide="download" class="w-4 h-4 stroke-[2]"></i>
-                        <span>Download the guide</span>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Press & Mission Section -->
-    <section class="w-full max-w-5xl mx-auto px-6 py-20 grid grid-cols-1 gap-8 md:gap-12">
-
-        <!-- Press Card -->
+    <section class="w-full max-w-5xl mx-auto px-6 py-20">
         <div class="group relative bg-[#F9F9F7] rounded-[32px] p-8 md:p-12 shadow-card border border-[rgba(0,0,0,0.06)] overflow-hidden transition-transform duration-300 hover:scale-[1.005]">
-            
-            <!-- Background Decoration -->
             <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-[#F7DE8A] opacity-10 rounded-full blur-3xl"></div>
-
             <div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
-                
-                <!-- Badge -->
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[rgba(0,0,0,0.06)] shadow-sm">
                     <i data-lucide="newspaper" class="w-3.5 h-3.5 text-[#9DB08F]"></i>
                     <span class="text-xs font-semibold text-[#7A7A7A] uppercase tracking-wider">In the Press</span>
                 </div>
-
-                <!-- Quote -->
-                <div class="space-y-6">
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight text-[#1A1A1A]">
-                        "Transforming the charitable giving space by offering nonprofits a free platform of fundraising tools where they can keep <span class="bg-[#F4C84A]/20 px-1 rounded-md text-[#1A1A1A] decoration-[#F4C84A] underline decoration-2 underline-offset-4">100% of the dollars</span> they raise."
-                    </h2>
-                </div>
-
-                <!-- Attribution -->
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight text-[#1A1A1A]">
+                    "Transforming the charitable giving space by offering nonprofits a free platform of fundraising tools where they can keep <span class="bg-[#F4C84A]/20 px-1 rounded-md text-[#1A1A1A] decoration-[#F4C84A] underline decoration-2 underline-offset-4">100% of the dollars</span> they raise."
+                </h2>
                 <div class="flex flex-col items-center gap-3 pt-2">
                     <div class="font-serif-logo text-3xl font-bold italic text-[#254153]">Forbes</div>
                     <div class="flex items-center gap-1 text-yellow-400">
@@ -1085,46 +625,25 @@ body { font-family: 'Inter', sans-serif; }
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
                 </div>
-
             </div>
         </div>
+    </section>
 
-            </section>
-
-    <!-- Footer Section -->
     <footer class="w-full px-4 pb-6 sm:px-6 lg:px-8 mt-20">
-        
-        <!-- Footer Container / Panel Surface -->
         <div class="max-w-[1400px] mx-auto bg-[#EFEFEA] rounded-[40px] shadow-[0_10px_28px_rgba(0,0,0,0.04)] overflow-hidden">
-            
             <div class="p-8 md:p-12 lg:p-16">
-                <!-- Top Section: Grid Layout -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
-                    
-                    <!-- Column 1: CTA Section (Wider - Spans 4 cols) -->
                     <div class="lg:col-span-4 flex flex-col items-start gap-6 pr-4">
-                        <h2 class="text-2xl sm:text-[28px] font-semibold tracking-tight text-[#1A1A1A] leading-tight">
-                            It's easy to get started, and it's free.
-                        </h2>
-                        
+                        <h2 class="text-2xl sm:text-[28px] font-semibold tracking-tight text-[#1A1A1A] leading-tight">It's easy to get started, and it's free.</h2>
                         <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                            <button class="bg-[#F4C84A] hover:bg-[#F7DE8A] text-[#1A1A1A] px-8 py-3.5 rounded-full text-base font-semibold transition-all transform active:scale-95 shadow-sm hover:shadow-md flex items-center justify-center">
-                                Sign up for free
-                            </button>
-                            <button class="bg-white border border-[rgba(0,0,0,0.08)] text-[#1A1A1A] hover:bg-[#F9F9F7] px-8 py-3.5 rounded-full text-base font-semibold transition-all transform active:scale-95 shadow-sm hover:shadow-md flex items-center justify-center">
-                                Request a demo
-                            </button>
+                            <button class="bg-[#F4C84A] hover:bg-[#F7DE8A] text-[#1A1A1A] px-8 py-3.5 rounded-full text-base font-semibold transition-all transform active:scale-95 shadow-sm hover:shadow-md flex items-center justify-center">Sign up for free</button>
+                            <button class="bg-white border border-[rgba(0,0,0,0.08)] text-[#1A1A1A] hover:bg-[#F9F9F7] px-8 py-3.5 rounded-full text-base font-semibold transition-all transform active:scale-95 shadow-sm hover:shadow-md flex items-center justify-center">Request a demo</button>
                         </div>
-
-                        <p class="text-base text-[#7A7A7A] leading-relaxed max-w-sm">
-                            BetterWorld is a social impact venture built to support the individuals, businesses, and nonprofits that serve their communities.
-                        </p>
+                        <p class="text-base text-[#7A7A7A] leading-relaxed max-w-sm">BetterWorld is a social impact venture built to support the individuals, businesses, and nonprofits that serve their communities.</p>
                     </div>
 
-                    <!-- Spacer / Gap on large screens -->
                     <div class="hidden lg:block lg:col-span-1"></div>
 
-                    <!-- Column 2: Platform -->
                     <div class="lg:col-span-2">
                         <h3 class="text-lg font-semibold text-[#1A1A1A] mb-5">Platform</h3>
                         <ul class="space-y-3">
@@ -1133,24 +652,19 @@ body { font-family: 'Inter', sans-serif; }
                             <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Ticketing</a></li>
                             <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Donations</a></li>
                             <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Crowdfunding</a></li>
-                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Impact Giving</a></li>
                         </ul>
                     </div>
 
-                    <!-- Column 3: Solutions -->
                     <div class="lg:col-span-3">
                         <h3 class="text-lg font-semibold text-[#1A1A1A] mb-5">Solutions</h3>
                         <ul class="space-y-3">
-                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Charities &amp; Nonprofits</a></li>
+                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Charities & Nonprofits</a></li>
                             <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Fundraising</a></li>
-                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Donor Engagement</a></li>
-                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Alumni Engagement</a></li>
-                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Schools &amp; PTOs</a></li>
-                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Sports Teams &amp; Clubs</a></li>
+                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Schools & PTOs</a></li>
+                            <li><a href="#" class="text-[15px] text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">Sports Teams & Clubs</a></li>
                         </ul>
                     </div>
 
-                    <!-- Column 4: Learn -->
                     <div class="lg:col-span-2 flex flex-col h-full">
                         <h3 class="text-lg font-semibold text-[#1A1A1A] mb-5">Learn</h3>
                         <ul class="space-y-3 mb-8">
@@ -1161,13 +675,9 @@ body { font-family: 'Inter', sans-serif; }
                     </div>
                 </div>
 
-                <!-- Divider -->
                 <div class="h-px w-full bg-[rgba(0,0,0,0.06)] my-10"></div>
 
-                <!-- Bottom Section: Copyright & Socials -->
                 <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-6">
-                    
-                    <!-- Left: Copyright & Links -->
                     <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-sm text-[#7A7A7A]">
                         <span>© 2025 BetterWorld</span>
                         <div class="flex gap-6">
@@ -1175,8 +685,6 @@ body { font-family: 'Inter', sans-serif; }
                             <a href="#" class="hover:text-[#1A1A1A] transition-colors">Privacy</a>
                         </div>
                     </div>
-
-                    <!-- Right: Social Icons -->
                     <div class="flex items-center gap-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#4A4A4A] hover:text-[#1A1A1A] hover:bg-[#F9F9F7] transition-all shadow-sm border border-[rgba(0,0,0,0.04)]">
                             <i data-lucide="facebook" class="w-[18px] h-[18px]"></i>
@@ -1185,16 +693,9 @@ body { font-family: 'Inter', sans-serif; }
                             <i data-lucide="instagram" class="w-[18px] h-[18px]"></i>
                         </a>
                         <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#4A4A4A] hover:text-[#1A1A1A] hover:bg-[#F9F9F7] transition-all shadow-sm border border-[rgba(0,0,0,0.04)]">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#4A4A4A] hover:text-[#1A1A1A] hover:bg-[#F9F9F7] transition-all shadow-sm border border-[rgba(0,0,0,0.04)]">
                             <i data-lucide="linkedin" class="w-[18px] h-[18px]"></i>
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1203,48 +704,39 @@ body { font-family: 'Inter', sans-serif; }
     <script>
         lucide.createIcons();
         
-        // Accordion functionality with auto-scroll
         const accordionItems = document.querySelectorAll('.accordion-item');
         const accordionContainer = document.getElementById('feature-accordion');
         let autoScrollInterval = null;
         let currentIndex = 0;
         let userInteracted = false;
         let resumeTimeout = null;
-        const AUTO_SCROLL_DELAY = 4000; // 4 seconds per item
-        const RESUME_DELAY = 8000; // Resume auto-scroll 8 seconds after user interaction
+        const AUTO_SCROLL_DELAY = 4000;
+        const RESUME_DELAY = 8000;
         
-        // Function to activate a specific accordion item
         function activateAccordionItem(index) {
             const items = Array.from(accordionItems);
             const targetItem = items[index];
-            
             if (!targetItem) return;
             
-            // Close all items
             items.forEach(otherItem => {
                 otherItem.classList.remove('active');
                 otherItem.classList.remove('border-[#F4C84A]');
                 otherItem.classList.add('border-transparent', 'hover:border-[#E9B949]/30');
-                
                 const header = otherItem.querySelector('.accordion-header');
                 const content = otherItem.querySelector('.accordion-content');
-                
                 if (header) header.classList.remove('hidden');
                 if (content) content.classList.add('hidden');
             });
             
-            // Open target item
             targetItem.classList.add('active');
             targetItem.classList.add('border-[#F4C84A]');
             targetItem.classList.remove('border-transparent', 'hover:border-[#E9B949]/30');
             
             const header = targetItem.querySelector('.accordion-header');
             const content = targetItem.querySelector('.accordion-content');
-            
             if (header) header.classList.add('hidden');
             if (content) {
                 content.classList.remove('hidden');
-                // Trigger animation
                 content.style.opacity = '0';
                 content.style.transform = 'translateY(-10px)';
                 setTimeout(() => {
@@ -1253,24 +745,19 @@ body { font-family: 'Inter', sans-serif; }
                     content.style.transform = 'translateY(0)';
                 }, 10);
             }
-            
-            // Re-initialize lucide icons for the newly visible content
             lucide.createIcons();
         }
         
-        // Function to advance to next accordion item
         function nextAccordionItem() {
             currentIndex = (currentIndex + 1) % accordionItems.length;
             activateAccordionItem(currentIndex);
         }
         
-        // Start auto-scrolling
         function startAutoScroll() {
             if (autoScrollInterval) return;
             autoScrollInterval = setInterval(nextAccordionItem, AUTO_SCROLL_DELAY);
         }
         
-        // Stop auto-scrolling
         function stopAutoScroll() {
             if (autoScrollInterval) {
                 clearInterval(autoScrollInterval);
@@ -1278,21 +765,16 @@ body { font-family: 'Inter', sans-serif; }
             }
         }
         
-        // Schedule resume of auto-scroll after user interaction
         function scheduleResumeAutoScroll() {
             if (resumeTimeout) clearTimeout(resumeTimeout);
             resumeTimeout = setTimeout(() => {
                 userInteracted = false;
-                if (isAccordionInView) {
-                    startAutoScroll();
-                }
+                if (isAccordionInView) startAutoScroll();
             }, RESUME_DELAY);
         }
         
-        // Track if accordion is in view
         let isAccordionInView = false;
         
-        // Intersection Observer to detect when section is in view
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 isAccordionInView = entry.isIntersecting;
@@ -1302,25 +784,16 @@ body { font-family: 'Inter', sans-serif; }
                     stopAutoScroll();
                 }
             });
-        }, {
-            threshold: 0.3 // Trigger when 30% of the section is visible
-        });
+        }, { threshold: 0.3 });
         
-        if (accordionContainer) {
-            observer.observe(accordionContainer);
-        }
+        if (accordionContainer) observer.observe(accordionContainer);
         
-        // Manual click handling
         accordionItems.forEach((item, index) => {
             item.addEventListener('click', function() {
                 const isActive = this.classList.contains('active');
-                
-                // Stop auto-scroll on user interaction
                 userInteracted = true;
                 stopAutoScroll();
                 scheduleResumeAutoScroll();
-                
-                // If clicked item wasn't active, open it
                 if (!isActive) {
                     currentIndex = index;
                     activateAccordionItem(index);
@@ -1328,6 +801,5 @@ body { font-family: 'Inter', sans-serif; }
             });
         });
     </script>
-
-</body></html>
-
+</body>
+</html>
