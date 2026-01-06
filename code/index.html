@@ -8,7 +8,7 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-<style>
+    <style>
 body { font-family: 'Inter', sans-serif; }
 .bg-card { background-color: #F9F9F7; }
 .bg-panel { background-color: #EFEFEA; }
@@ -98,7 +98,7 @@ body { font-family: 'Inter', sans-serif; }
             </div>
 
             <div class="relative w-full max-w-md group">
-                <form class="flex items-center bg-white p-2 pl-6 rounded-full shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.03)] transition-shadow duration-300 hover:shadow-[0_16px_48px_rgba(0,0,0,0.10)]">
+                <form class="flex items-center bg-white/60 backdrop-blur-xl p-2 pl-6 rounded-full shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-white/50 transition-shadow duration-300 hover:shadow-[0_16px_48px_rgba(0,0,0,0.10)]">
                     <input type="email" placeholder="Enter your email" class="flex-1 bg-transparent border-none outline-none text-[#1A1A1A] placeholder-[#A0A0A0] text-base h-full py-2">
                     <button type="button" class="bg-[#F4C84A] hover:bg-[#E9B949] text-[#1A1A1A] px-6 py-3 rounded-full font-medium text-sm transition-colors flex items-center gap-2">Get started</button>
                 </form>
@@ -122,42 +122,43 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
             </div>
 
-            <div class="absolute left-0 sm:-left-8 top-0 bg-white p-4 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-64 border border-[rgba(0,0,0,0.04)] z-20 transform hover:-translate-y-1 transition-transform duration-500">
-                <div class="h-32 rounded-[16px] overflow-hidden mb-3 relative">
-                    <img src="https://images.unsplash.com/photo-1745602649736-9db876991976?w=800&q=80" alt="Art Gallery" class="w-full h-full object-cover">
-                    <div class="absolute top-2 right-2 bg-white/90 backdrop-blur rounded-full px-2 py-1 text-[10px] font-semibold text-[#1A1A1A]">2h left</div>
-                </div>
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-sm font-semibold text-[#1A1A1A]">Modern Art Tour</h3>
-                        <p class="text-xs text-[#7A7A7A]">Washington D.C.</p>
-                    </div>
-                    <div class="text-right">
-                        <p class="text-xs text-[#7A7A7A]">Current Bid</p>
-                        <p class="text-sm font-semibold text-[#1A1A1A]">$850</p>
+            <div class="absolute left-0 sm:-left-8 top-0 bg-white/60 backdrop-blur-xl p-3 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-72 border border-white/50 z-20 transform hover:-translate-y-1 transition-transform duration-500">
+                <div class="h-36 rounded-[16px] overflow-hidden mb-3 relative group">
+                    <img src="https://images.unsplash.com/photo-1506886009355-7f3af05dd5d2?w=800&q=80" alt="Washington Monument with Cherry Blossoms" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-2 left-2 bg-white/90 backdrop-blur rounded-full px-2 py-1 text-[10px] font-semibold text-[#1A1A1A] flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#7BC47F] animate-pulse"></span>
+                        Live Auction
                     </div>
                 </div>
-                <button class="w-full py-2 rounded-full bg-[#F6F6F4] text-[#1A1A1A] text-xs font-medium hover:bg-[#EFEFEA] transition-colors">Place Bid</button>
+                <div class="px-1">
+                    <h3 class="text-sm font-semibold text-[#1A1A1A] mb-1">American History Comes Alive</h3>
+                    <p class="text-[11px] text-[#7A7A7A] mb-3 leading-snug">A Historical Family Adventure to Washington D.C.</p>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-3">
+                        <div class="bg-[#F9F9F7] p-2.5 rounded-xl">
+                            <p class="text-[9px] uppercase tracking-wider text-[#7A7A7A] font-medium mb-0.5">Current Bid</p>
+                            <p class="text-base font-semibold text-[#1A1A1A]">$2,750</p>
+                            <p class="text-[9px] text-[#7BC47F] font-medium flex items-center gap-0.5">
+                                <i data-lucide="trending-up" class="w-2.5 h-2.5"></i> 12 bids
+                            </p>
+                        </div>
+                        <div class="bg-[#F9F9F7] p-2.5 rounded-xl">
+                            <p class="text-[9px] uppercase tracking-wider text-[#7A7A7A] font-medium mb-0.5">Time Left</p>
+                            <p class="text-base font-semibold text-[#1A1A1A]">2w 3d</p>
+                            <div class="w-full bg-[#ECECE6] h-1 rounded-full mt-1.5 overflow-hidden">
+                                <div class="bg-[#F4C84A] h-full rounded-full w-[45%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full py-2.5 rounded-full bg-[#F4C84A] hover:bg-[#E9B949] text-[#1A1A1A] text-xs font-medium transition-colors flex items-center justify-center gap-1.5 shadow-[0_4px_12px_rgba(244,200,74,0.25)]">
+                        Bid Now
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5 opacity-60"></i>
+                    </button>
+                </div>
             </div>
 
-            <div class="absolute bottom-0 left-4 sm:left-10 bg-white p-2 rounded-[32px] shadow-[0_20px_40px_rgba(0,0,0,0.12)] z-30 w-48 border border-[rgba(0,0,0,0.04)] transform rotate-3">
-                <div class="bg-[#F9F9F7] rounded-[24px] p-4 flex flex-col items-center text-center h-full">
-                    <div class="w-10 h-10 rounded-full bg-[#ECECE6] mb-3 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover">
-                    </div>
-                    <p class="text-xs font-semibold text-[#1A1A1A] mb-1">Animal Rescue</p>
-                    <p class="text-[10px] text-[#7A7A7A] mb-3 leading-tight">Help us build a new shelter wing.</p>
-                    <div class="grid grid-cols-2 gap-2 w-full mb-3">
-                        <div class="bg-white rounded-lg py-1.5 border border-[#EFEFEA] text-[10px] font-medium text-[#1A1A1A]">$25</div>
-                        <div class="bg-[#F4C84A] rounded-lg py-1.5 border border-[#F4C84A] text-[10px] font-medium text-[#1A1A1A] shadow-sm">$50</div>
-                        <div class="bg-white rounded-lg py-1.5 border border-[#EFEFEA] text-[10px] font-medium text-[#1A1A1A]">$100</div>
-                        <div class="bg-white rounded-lg py-1.5 border border-[#EFEFEA] text-[10px] font-medium text-[#1A1A1A]">Other</div>
-                    </div>
-                    <button class="w-full py-1.5 rounded-full bg-[#1A1A1A] text-white text-[10px] font-medium">Donate Now</button>
-                </div>
-            </div>
-
-            <div class="absolute top-0 right-[-20px] sm:right-[-30px] bg-white p-4 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-44 z-20 border border-[rgba(0,0,0,0.04)] hidden sm:block">
+            <div class="absolute top-0 right-[-20px] sm:right-[-30px] bg-white/60 backdrop-blur-xl p-4 rounded-[24px] shadow-[0_10px_28px_rgba(0,0,0,0.07)] w-44 z-20 border border-white/50 hidden sm:block">
                <div class="flex items-center gap-3 mb-3">
                     <div class="w-10 h-10 rounded-full bg-[#CFE6DA] flex items-center justify-center text-[#1A1A1A]">
                         <i data-lucide="trophy" class="w-5 h-5 stroke-[1.5]"></i>
@@ -199,15 +200,15 @@ body { font-family: 'Inter', sans-serif; }
                     Get a platform walkthrough
                     <i data-lucide="arrow-right" class="w-4 h-4 opacity-70"></i>
                 </button>
-                <button class="h-12 px-8 bg-white border border-black/5 text-secondary text-sm font-medium rounded-full hover:bg-gray-50 transition-colors">View demo</button>
+                <button class="h-12 px-8 bg-white/60 backdrop-blur-xl border border-white/50 text-secondary text-sm font-medium rounded-full hover:bg-gray-50/60 transition-colors">View demo</button>
             </div>
         </section>
 
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
+            <div class="bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 shadow-card border border-white/50 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#CFE6DA] text-[#4A7A5E] flex items-center justify-center mb-6">
                     <i data-lucide="piggy-bank" class="w-6 h-6 stroke-[1.5]"></i>
-                </div>
+            </div>
                 <h3 class="text-lg font-semibold text-primary mb-3">Keep more</h3>
                 <p class="text-sm text-secondary leading-relaxed">Every dollar goes directly to your mission.</p>
                 <div class="mt-auto pt-8">
@@ -218,10 +219,10 @@ body { font-family: 'Inter', sans-serif; }
                    <div class="h-2 w-full bg-[#EFEFEA] rounded-full overflow-hidden">
                        <div class="h-full bg-[#7BC47F] w-full rounded-full"></div>
                    </div>
-                </div>
             </div>
+          </div>
 
-            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
+            <div class="bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 shadow-card border border-white/50 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#F7DE8A] text-[#8C6D1F] flex items-center justify-center mb-6">
                     <i data-lucide="clock" class="w-6 h-6 stroke-[1.5]"></i>
                 </div>
@@ -230,13 +231,13 @@ body { font-family: 'Inter', sans-serif; }
                 <div class="mt-auto pt-8 flex items-center gap-3">
                     <div class="px-3 py-1 bg-white rounded-full text-xs font-medium text-secondary shadow-sm border border-black/5">Automated</div>
                     <div class="px-3 py-1 bg-white rounded-full text-xs font-medium text-secondary shadow-sm border border-black/5">Fast</div>
-                </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
+            <div class="bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 shadow-card border border-white/50 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#E9B949] text-white flex items-center justify-center mb-6 opacity-90">
                     <i data-lucide="trending-up" class="w-6 h-6 stroke-[1.5]"></i>
-                </div>
+          </div>
                 <h3 class="text-lg font-semibold text-primary mb-3">Grow faster</h3>
                 <p class="text-sm text-secondary leading-relaxed">Donor-friendly design proven to increase giving by an average of 30%.</p>
                 <div class="mt-auto pt-6">
@@ -245,11 +246,11 @@ body { font-family: 'Inter', sans-serif; }
                         <div class="w-full bg-[#EFEFEA] rounded-t-sm h-[60%]"></div>
                         <div class="w-full bg-[#EFEFEA] rounded-t-sm h-[50%]"></div>
                         <div class="w-full bg-[#F4C84A] rounded-t-sm h-[100%] shadow-sm"></div>
-                    </div>
-                </div>
-            </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-card border border-white/40 card-hover flex flex-col h-full">
+            <div class="bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 shadow-card border border-white/50 card-hover flex flex-col h-full">
                 <div class="w-12 h-12 rounded-2xl bg-[#EFEFEA] text-[#7A7A7A] flex items-center justify-center mb-6">
                     <i data-lucide="heart-handshake" class="w-6 h-6 stroke-[1.5]"></i>
                 </div>
@@ -272,13 +273,13 @@ body { font-family: 'Inter', sans-serif; }
                 <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-primary mb-12">
                     Join 105,000+ amazing nonprofits,<br>organizations, and fundraisers on BetterWorld
                 </h2>
-                <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 [&>img]:brightness-0">
-                    <img src="https://betterworld.org/_astro/usacycling_ZcXosd.svg" alt="USA Cycling" class="h-6 w-auto">
-                    <img src="https://betterworld.org/_astro/fbla_Z1ESSME.svg" alt="FBLA" class="h-6 w-auto">
-                    <img src="https://betterworld.org/_astro/womensinitiative_Zi3CiI.svg" alt="The Women's Initiative" class="h-6 w-auto">
-                    <img src="https://betterworld.org/_astro/boysandgirlsclub_2ptMG4.svg" alt="Boys & Girls Club" class="h-6 w-auto">
-                    <img src="https://betterworld.org/_astro/makeawish_27Lzz5.svg" alt="Make A Wish" class="h-6 w-auto">
-                    <img src="https://betterworld.org/_astro/younglife_1iGknD.svg" alt="Young Life" class="h-6 w-auto">
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 md:gap-x-12 lg:gap-x-16 [&>img]:brightness-0">
+                    <img src="https://betterworld.org/_astro/usacycling_ZcXosd.svg" alt="USA Cycling" class="h-6 md:h-8 lg:h-10 w-auto">
+                    <img src="https://betterworld.org/_astro/fbla_Z1ESSME.svg" alt="FBLA" class="h-6 md:h-8 lg:h-10 w-auto">
+                    <img src="https://betterworld.org/_astro/womensinitiative_Zi3CiI.svg" alt="The Women's Initiative" class="h-6 md:h-8 lg:h-10 w-auto">
+                    <img src="https://betterworld.org/_astro/boysandgirlsclub_2ptMG4.svg" alt="Boys & Girls Club" class="h-6 md:h-8 lg:h-10 w-auto">
+                    <img src="https://betterworld.org/_astro/makeawish_27Lzz5.svg" alt="Make A Wish" class="h-6 md:h-8 lg:h-10 w-auto">
+                    <img src="https://betterworld.org/_astro/younglife_1iGknD.svg" alt="Young Life" class="h-6 md:h-8 lg:h-10 w-auto">
                 </div>
             </div>
         </section>
@@ -298,7 +299,7 @@ body { font-family: 'Inter', sans-serif; }
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="relative w-full order-2 lg:order-1">
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#E9B949]/20 via-[#F6F6F4] to-[#9DB08F]/20 rounded-full blur-3xl opacity-60 -z-10"></div>
-                <div class="relative bg-[#F9F9F7] rounded-[32px] p-2 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.06)] overflow-hidden transition-transform hover:scale-[0.99] duration-500">
+                <div class="relative bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-2 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-white/50 overflow-hidden transition-transform hover:scale-[0.99] duration-500">
                     <div class="flex items-center justify-between px-6 py-4 border-b border-[rgba(0,0,0,0.06)]">
                         <div class="flex items-center gap-2">
                             <div class="w-2.5 h-2.5 rounded-full bg-[#E9B949]"></div>
@@ -371,7 +372,7 @@ body { font-family: 'Inter', sans-serif; }
                             Auctions
                         </h3>
                     </div>
-                    <div class="accordion-content bg-white rounded-2xl p-6 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.06)] relative z-10 transition-all duration-300">
+                    <div class="accordion-content bg-white/60 backdrop-blur-xl rounded-2xl p-6 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-white/50 relative z-10 transition-all duration-300">
                         <div class="flex items-center gap-3 mb-3">
                             <div class="p-2 rounded-lg bg-[#F6F6F4] text-[#1A1A1A]">
                                 <i data-lucide="gavel" class="w-5 h-5"></i>
@@ -467,7 +468,7 @@ body { font-family: 'Inter', sans-serif; }
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
+            <div class="bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-white/50 hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#F7DE8A]/20 to-transparent rounded-bl-full pointer-events-none"></div>
                 <div class="flex justify-between items-start mb-6">
                     <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
@@ -488,7 +489,7 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
             </div>
 
-            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
+            <div class="bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-white/50 hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#9DB08F]/20 to-transparent rounded-bl-full pointer-events-none"></div>
                 <div class="flex justify-between items-start mb-6">
                     <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
@@ -509,7 +510,7 @@ body { font-family: 'Inter', sans-serif; }
                 </div>
             </div>
 
-            <div class="bg-[#F9F9F7] rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-[rgba(0,0,0,0.04)] hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
+            <div class="bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 shadow-[0_10px_28px_rgba(0,0,0,0.07)] border border-white/50 hover:-translate-y-1 transition-transform duration-300 flex flex-col h-full relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#6FA8DC]/10 to-transparent rounded-bl-full pointer-events-none"></div>
                 <div class="flex justify-between items-start mb-6">
                     <i data-lucide="quote" class="w-10 h-10 text-[#F4C84A] fill-[#F4C84A]/20 rotate-180"></i>
@@ -541,7 +542,7 @@ body { font-family: 'Inter', sans-serif; }
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
+            <div class="bg-white/60 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-white/50 flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[#F4C84A] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="wallet" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
@@ -550,7 +551,7 @@ body { font-family: 'Inter', sans-serif; }
                 <p class="text-base text-[#7A7A7A] leading-relaxed">No matter how large your organization, BetterWorld will always remain 100% free.</p>
             </div>
 
-            <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
+            <div class="bg-white/60 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-white/50 flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[#9DB08F] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="palette" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
@@ -559,7 +560,7 @@ body { font-family: 'Inter', sans-serif; }
                 <p class="text-base text-[#7A7A7A] leading-relaxed">BetterWorld campaigns are designed to look beautiful on any device.</p>
             </div>
 
-            <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
+            <div class="bg-white/60 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-white/50 flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[#CFE6DA] opacity-30 group-hover:opacity-40 transition-opacity"></div>
                     <i data-lucide="layers" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
@@ -568,7 +569,7 @@ body { font-family: 'Inter', sans-serif; }
                 <p class="text-base text-[#7A7A7A] leading-relaxed">We designed BetterWorld with the user experience in mind.</p>
             </div>
 
-            <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
+            <div class="bg-white/60 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-white/50 flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[#F7DE8A] opacity-30 group-hover:opacity-40 transition-opacity"></div>
                     <i data-lucide="link" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
@@ -577,7 +578,7 @@ body { font-family: 'Inter', sans-serif; }
                 <p class="text-base text-[#7A7A7A] leading-relaxed">Manage every campaign from a single central hub.</p>
             </div>
 
-            <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
+            <div class="bg-white/60 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-white/50 flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[#E9B949] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="settings" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
@@ -586,7 +587,7 @@ body { font-family: 'Inter', sans-serif; }
                 <p class="text-base text-[#7A7A7A] leading-relaxed">Our tools are automated to save you time on busywork.</p>
             </div>
 
-            <div class="bg-white rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-[rgba(0,0,0,0.04)] flex flex-col items-start h-full">
+            <div class="bg-white/60 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 shadow-card card-hover transition-all duration-300 border border-white/50 flex flex-col items-start h-full">
                 <div class="w-14 h-14 rounded-2xl bg-[#F6F6F4] flex items-center justify-center mb-6 text-[#1A1A1A] relative overflow-hidden group">
                     <div class="absolute inset-0 bg-[#9DB08F] opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     <i data-lucide="flag" class="relative z-10 w-7 h-7 stroke-[1.5]"></i>
@@ -605,7 +606,7 @@ body { font-family: 'Inter', sans-serif; }
     </section>
 
     <section class="w-full max-w-5xl mx-auto px-6 py-20">
-        <div class="group relative bg-[#F9F9F7] rounded-[32px] p-8 md:p-12 shadow-card border border-[rgba(0,0,0,0.06)] overflow-hidden transition-transform duration-300 hover:scale-[1.005]">
+        <div class="group relative bg-[#F9F9F7]/60 backdrop-blur-xl rounded-[32px] p-8 md:p-12 shadow-card border border-white/50 overflow-hidden transition-transform duration-300 hover:scale-[1.005]">
             <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-[#F7DE8A] opacity-10 rounded-full blur-3xl"></div>
             <div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[rgba(0,0,0,0.06)] shadow-sm">
@@ -637,7 +638,7 @@ body { font-family: 'Inter', sans-serif; }
                         <h2 class="text-2xl sm:text-[28px] font-semibold tracking-tight text-[#1A1A1A] leading-tight">It's easy to get started, and it's free.</h2>
                         <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                             <button class="bg-[#F4C84A] hover:bg-[#F7DE8A] text-[#1A1A1A] px-8 py-3.5 rounded-full text-base font-semibold transition-all transform active:scale-95 shadow-sm hover:shadow-md flex items-center justify-center">Sign up for free</button>
-                            <button class="bg-white border border-[rgba(0,0,0,0.08)] text-[#1A1A1A] hover:bg-[#F9F9F7] px-8 py-3.5 rounded-full text-base font-semibold transition-all transform active:scale-95 shadow-sm hover:shadow-md flex items-center justify-center">Request a demo</button>
+                            <button class="bg-white/60 backdrop-blur-xl border border-white/50 text-[#1A1A1A] hover:bg-[#F9F9F7]/60 px-8 py-3.5 rounded-full text-base font-semibold transition-all transform active:scale-95 shadow-sm hover:shadow-md flex items-center justify-center">Request a demo</button>
                         </div>
                         <p class="text-base text-[#7A7A7A] leading-relaxed max-w-sm">BetterWorld is a social impact venture built to support the individuals, businesses, and nonprofits that serve their communities.</p>
                     </div>
@@ -780,7 +781,7 @@ body { font-family: 'Inter', sans-serif; }
                 isAccordionInView = entry.isIntersecting;
                 if (entry.isIntersecting && !userInteracted) {
                     startAutoScroll();
-                } else {
+        } else {
                     stopAutoScroll();
                 }
             });
@@ -801,5 +802,5 @@ body { font-family: 'Inter', sans-serif; }
             });
         });
     </script>
-</body>
+  </body>
 </html>
